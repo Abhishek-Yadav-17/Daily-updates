@@ -1,5 +1,4 @@
 # Problem: Valid Parentheses
-```python
 # Problem Statement:
 # Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 #
@@ -44,4 +43,3 @@ print(isValid("([)]"))  # Output: False
 print(isValid("{[]}"))  # Output: True
 print(isValid("")) # Output: True
 print(isValid("[")) #Output: False
-```
