@@ -29,7 +29,7 @@ problem = random.choice(problems)
 def generate_solution(problem):
     try:
         model = genai.GenerativeModel('gemini-2.0-flash')
-        prompt = f"Write a Python solution for the LeetCode problem: {problem}. Include the problem statement first, then the solution with the code block and the function signature and print the output for some test cases. Add comments to the code to explain the logic but make sure the code is clean and readable also add the time and space complexity of the solution and the reasoning behind it. also comment shouln't cause any issues with the code execution."
+        prompt = f"Write a Java solution for the LeetCode problem: {problem}. Include the problem statement first, then the solution with the code block and the function signature and print the output for some test cases. Add comments to the code to explain the logic but make sure the code is clean and readable also add the time and space complexity of the solution and the reasoning behind it. also comment shouln't cause any issues with the code execution. filename should be the problem name in lowercase and replace spaces with underscores. and date should be the current date in the format YYYYMMDD added to the filename."
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:
@@ -38,7 +38,7 @@ def generate_solution(problem):
 
 # Save the solution in a Python file
 def save_solution(solution, problem):
-    filename = problem.lower().replace(" ", "_") + f"_{datetime.now().strftime('%Y%m%d')}.py"
+    filename = problem.lower().replace(" ", "_") + f"_{datetime.now().strftime('%Y%m%d')}.java"
     filepath = os.path.join("daily_solutions", filename)
     os.makedirs("daily_solutions", exist_ok=True)  # Ensure the directory exists
     with open(filepath, 'w') as f:
