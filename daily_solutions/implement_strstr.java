@@ -57,7 +57,7 @@ public class implement_strstr {
     }
 
     public static void main(String[] args) {
-        ImplementStrStr_20240229 solution = new ImplementStrStr_20240229();
+        implement_strstr solution = new implement_strstr();
 
         // Test cases
         String haystack1 = "hello";

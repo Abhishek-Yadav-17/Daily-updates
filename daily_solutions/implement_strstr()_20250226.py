@@ -1,5 +1,4 @@
 # Problem: Implement strStr()
-```python
 # Problem Statement:
 #
 # Implement strStr().
@@ -98,4 +97,3 @@ if __name__ == '__main__':
     result5 = sol.strStr(haystack5, needle5)
     print(f"Input: haystack = '{haystack5}', needle = '{needle5}'")
     print(f"Output: {result5}") # Expected output: -1
-```

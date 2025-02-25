@@ -1,5 +1,4 @@
-# Problem: Maximum Subarray
-```java
+// Problem: Maximum Subarray
 /**
  * LeetCode Problem: 53. Maximum Subarray
  *
@@ -77,4 +76,3 @@ public class maximum_subarray_20240228 {
      *   This ensures that we find the maximum sum subarray in O(n) time.
      */
 }
-```

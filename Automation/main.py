@@ -42,7 +42,8 @@ def save_solution(solution, problem):
     filepath = os.path.join("daily_solutions", filename)
     os.makedirs("daily_solutions", exist_ok=True)  # Ensure the directory exists
     with open(filepath, 'w') as f:
-        f.write(f"# Problem: {problem}\n")
+        f.write(f"// Problem: {problem}\n")
+        solution = solution.replace("```", "")
         f.write(solution)
     print(f"Solution for '{problem}' saved as '{filename}'.")
 
