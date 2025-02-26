@@ -1,5 +1,5 @@
 // Problem: Valid Parentheses
-java
+
 /**
  * LeetCode Problem 20: Valid Parentheses
  *
@@ -27,7 +27,7 @@ java
 
 import java.util.Stack;
 
-public class valid_parentheses_20240103 {
+public class valid_parentheses {
 
     /**
      * Determines if a string containing parentheses is valid.
@@ -66,7 +66,7 @@ public class valid_parentheses_20240103 {
     }
 
     public static void main(String[] args) {
-        valid_parentheses_20240103 solution = new valid_parentheses_20240103();
+        valid_parentheses solution = new valid_parentheses();
 
         // Test cases
         String s1 = "()";
